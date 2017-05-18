@@ -1,0 +1,21 @@
+<div class="panel with-nav-tabs panel-default">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <div class="bars pull-right">
+                <a href="#">
+                    <i class="maximum fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" data-original-title="Maximize"></i>
+                </a>
+            </div>
+        </div>
+        <ul class="nav nav-[[tabset.type || 'tabs']]" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude></ul>
+    </div>
+    <div class="panel-body">
+        <div class="tab-content">
+            <div class="tab-pane"
+            ng-repeat="tab in tabset.tabs"
+            ng-class="{active: tabset.active === tab.index}"
+            uib-tab-content-transclude="tab">
+            </div>
+        </div>
+    </div>
+</div>

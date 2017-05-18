@@ -1,0 +1,10 @@
+{
+    "name": "Registration",
+    "authors": [
+        {
+            "name": "yep template",
+            "email": "info@yeptemplate.com"
+        }
+    ],
+    "require": {}
+}

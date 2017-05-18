@@ -1,0 +1,13 @@
+<div class="panel [[panelClass || 'panel-default']]">
+    <div class="panel-heading" style="background-color: #f5f5f5;padding: 10px 15px;" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+        <h4 class="panel-title">
+            <a href tabindex="0" class="accordion-toggle" uib-accordion-header ng-class="{'text-muted': isDisabled}">
+                [[heading]]
+                <i class="fa fa-lg pull-right" ng-class="{'fa-angle-down': isOpen, 'fa-angle-up': !isOpen}"></i>
+            </a>
+        </h4>
+    </div>
+    <div class="panel-collapse collapse" uib-collapse="!isOpen">
+        <div class="panel-body" ng-transclude></div>
+    </div>
+</div>
